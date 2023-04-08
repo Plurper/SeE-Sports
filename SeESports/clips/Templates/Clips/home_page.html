@@ -1,14 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-</head>
-<body>
-    <h1>Welcome to SeE-Sports</h1>
-    <p>This is the landing page.</p>
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock title %}
+
+{% block content %}
+
+
+    <h1 class="text-center"> Welcome to SeE-Sports </h1>
+    <p class="text-center">This is the landing page.</p>
+    <div class="text-center">
     <a href="{% url 'clip_list' %}">View Clip List</a>
-</body>
-</html>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 1</button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-secondary btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 2</button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 3</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-danger btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 4</button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-warning btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 5</button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-info btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 6</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+
+   
