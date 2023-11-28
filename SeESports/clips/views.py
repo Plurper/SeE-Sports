@@ -7,3 +7,6 @@ def clip_list(request):
 
 def home_page(request):
     return render (request, 'clips/home_page.html')
+
+def videos(request):
+    return render (request, 'videos.html')

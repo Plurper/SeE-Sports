@@ -1,41 +1,56 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}Home Page{% endblock title %}
 
 {% block content %}
 
-
-    <h1 class="text-center"> Welcome to SeE-Sports </h1>
-    <p class="text-center">This is the landing page.</p>
+<div class="d-flex justify-content-center align-items-center">
+    <div class="container">
+    <h1 class="text-center"> Welkom bij MyLab testsite </h1>
+    <p class="text-center">Dit is de landingspagina</p>
     <div class="text-center">
-    <a href="{% url 'clip_list' %}">View Clip List</a>
+    <a href="{% url 'clip_list' %}">Bekijk lijst met clips</a>
     </div>
-    <div class="d-flex justify-content-center align-items-center">
-        <div class="container">
+    <div class="text-center">
             <div class="row">
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-primary btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 1</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Knop 1</button>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-secondary btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 2</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Knop 2</button>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-success btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 3</button>
+                    <button type="button" class="btn btn-success btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Knop 3</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-danger btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 4</button>
+                    <button type="button" class="btn btn-danger btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Knop 4</button>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-warning btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 5</button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Knop 5</button>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-info btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Button 6</button>
+                    <button type="button" class="btn btn-info btn-lg btn-block mb-3" onclick="location.href='{% url 'home_page' %}'">Knop 6</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="d-flex justify-content-center align-items-center">
+    <div class="text-center>
+<div class="row">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{% static 'images/Hanze.png' %}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Kaart titel</h5>
+          <p class="card-text">Klik hieronder om clips te uploaden</p>
+          <a href="#" class="btn btn-primary">Inzenden</a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
 
 {% endblock content %}
 
