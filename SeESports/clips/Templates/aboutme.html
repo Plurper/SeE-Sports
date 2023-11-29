@@ -1,0 +1,45 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Aboutme{% endblock title %}
+
+{% block content %}
+
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+<div class="container">
+    <div class="header">
+        <h1>Over mij</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/pf.jpg' %}" alt="Profile Picture" class="profile-picture">
+            <h3>Your Name</h3>
+            <p>Short description or tagline</p>
+        </div>
+        <div class="col-md-8">
+            <h2>Biography</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+            <h2>Experience</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+            <h2>Contact</h2>
+            <p>Email: your-email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+{% endblock content %}
